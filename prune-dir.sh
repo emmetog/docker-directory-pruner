@@ -11,7 +11,7 @@ if [ " $DRY_RUN " == " false " ]; then
   echo $FILES | xargs --no-run-if-empty rm -r
   echo "Cleanup complete"
 else
-  echo "Dry run detected, not deleting anything and listing files that woud be deleted instead:"
+  echo "Dry run detected, not deleting anything and listing files that would be deleted instead:"
   FILES_ARRAY=( $FILES )
   for i in "${FILES_ARRAY[@]}"
   do
